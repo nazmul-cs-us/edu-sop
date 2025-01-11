@@ -6,82 +6,88 @@
 \setlength\parindent{0pt}
 \linespread{1.2}
 
-% Define boolean flags for section titles
-\newif\ifshowSectionTitles
 
-% Set the flag (true to render titles, false to hide them)
-\showSectionTitlesfalse % Change to \showSectionTitlesfalse to hide all section titles
+% Toggle section titles on/off
+\newif\ifshowsections
+\showsectionstrue % Change to \showsectionsfalse to hide section titles
+
 
 \begin{document}
 
+
 \begin{center}
-    {\Large \textbf{Statement of Purpose}}
+{\Large \textbf{Statement of Purpose}}
 \end{center}
 
-\ifshowSectionTitles
-\section*{Introduction}
-\fi
-Growing up in a rural community in Bangladesh, I experienced the challenges of limited resources and access to technology.
-However, these constraints fostered resilience and a deep appreciation for learning.
-My determination to excel in education led me to pursue higher secondary studies in Dhaka, where adapting to a new environment and lifestyle was both challenging and transformative.
-Despite the difficulties, I embraced the opportunity, staying focused on my academic goals and igniting a lifelong passion for problem-solving through technology.
 
-\ifshowSectionTitles
-\section*{Academic Journey}
-\fi
-My pursuit of a Bachelor of Science in Computer Science and Engineering at Shahjalal University of Science and Technology (SUST) was a defining chapter in my journey.
-Here, I discovered my passion for artificial intelligence (AI) and machine learning (ML), which culminated in my undergraduate thesis, \textit{Deep-eANN: A Novel Approach for Improved Classification of Precursor microRNA Using Artificial Neural Network Model}.
-This research marked my first significant contribution to the field of AI and solidified my ambition to address real-world challenges through innovative solutions.
+\ifshowsections\section*{Introduction}\fi
 
-During my undergraduate studies, I actively participated in competitive programming contests, earning recognition at national and inter-university events.
-These experiences sharpened my analytical and problem-solving skills, preparing me for the challenges of both academic research and professional roles.
-Despite financial and resource limitations, I persevered, spending countless hours in university labs to practice coding and collaborate with peers.
 
-\ifshowSectionTitles
-\section*{Professional Experience}
-\fi
-After graduating, I embarked on a professional journey that has spanned over a decade and multiple countries, including Bangladesh, Singapore, and the UAE.
-At Smarter AI, I developed **Instant Streaming\textsuperscript{TM}**, enabling sub-second connectivity for Dashcams, and designed traffic feature identification algorithms using geospatial data.
-These contributions have enhanced the performance of intelligent transportation systems and demonstrated my ability to translate complex theories into practical solutions.
+Growing up in a rural area in Bangladesh, I faced significant challenges due to limited access to technology and resources. These difficulties helped me develop resilience and a strong love for learning. My dedication to education led me to pursue higher secondary studies in Dhaka, where I adapted to a new environment despite the challenges. This experience strengthened my passion for using technology to address complex problems.
 
-My tenure at AnyConnect further expanded my expertise, where I led the design and implementation of a Communication SDK and conducted R\&D on SaaS-based IoT technologies.
-These roles honed my skills in system architecture, real-time communication, and collaborative research, reinforcing my ability to address multidisciplinary challenges effectively.
 
-\ifshowSectionTitles
-\section*{Research Contributions}
-\fi
-My research journey began with my undergraduate thesis, where I developed a neural network ensemble model that improved precursor microRNA classification accuracy.
-Building on this foundation, I have continued exploring real-time systems, feature detection algorithms, and optimization methods in professional settings.
-These experiences have not only deepened my technical expertise but also strengthened my passion for advancing the field of computer science.
+\ifshowsections\section*{Academic Journey}\fi
 
-\ifshowSectionTitles
-\section*{Research Interests}
-\fi
-I am particularly drawn to the intersection of AI, ML, and IoT, where advancements have the potential to redefine industries and improve lives.
-My primary research interests include developing scalable algorithms for large-scale applications, with a focus on intelligent transportation and autonomous systems.
-Through a PhD program, I aim to explore cutting-edge methodologies in deep learning, optimization, and system integration, contributing to both academia and industry.
 
-\ifshowSectionTitles
-\section*{Why [University Name]?}
-\fi
-I have chosen \textbf{[University Name]} for its strong emphasis on interdisciplinary research and its reputation for excellence in AI and systems engineering.
-The work of Professor \textbf{[Faculty Name]} in \textbf{[Research Area]} resonates deeply with my research interests, and I am eager to collaborate under their guidance.
-The university’s collaborative environment and robust computational resources provide the perfect ecosystem for impactful research.
+I’ve always worked hard to achieve my goals, consistently ranking among the top five in my class. My parents’ sacrifices had a profound impact on me. My father worked overseas under difficult conditions, while my mother constantly reminded me of the importance of preparing for the future. Their efforts inspired me to value education deeply.
 
-\ifshowSectionTitles
-\section*{Conclusion}
-\fi
-My long-term goal is to contribute to academia and industry by developing innovative solutions to real-world problems and mentoring the next generation of researchers.
-I am equally committed to giving back to my home country by sharing knowledge and inspiring future engineers to explore the transformative potential of technology.
 
-The challenges I have faced in my academic and professional journey have shaped my character, resilience, and ambition.
-I believe that a PhD from \textbf{[University Name]} will not only equip me with the skills to achieve my aspirations but also empower me to make meaningful contributions to the global research community.
+I was the first in my family to attend an engineering school, breaking new ground. During my undergraduate studies at Shahjalal University of Science and Technology (SUST), I discovered my passion for artificial intelligence (AI) and machine learning (ML). My thesis, \textit{Deep-eANN: A Novel Approach for Improved Classification of Precursor microRNA Using Artificial Neural Network Model}, marked my first major contribution to AI research. This work fueled my desire to solve real-world problems through innovative solutions.
+
+
+I also participated in programming contests at national and inter-university levels, which sharpened my problem-solving and analytical skills. Despite financial challenges, I spent long hours practicing in university labs, preparing myself for future academic and professional pursuits.
+
+
+\ifshowsections\section*{Personal Resilience and Sacrifices}\fi
+
+
+During my second year of undergraduate studies, my father returned from overseas due to illness, making me the primary breadwinner for my family. As the second eldest among four siblings, I balanced academics and work to support my family. My efforts ensured that my younger brothers could continue their education. One is now an undergraduate student, and the other is nearing the completion of a marine degree. For over a decade, I prioritized their futures over my own aspirations, investing all I had in their stability.
+
+
+One memorable moment in my academic journey was solving a challenging dynamics problem on my own two days after a contest where my team had struggled. This experience reinforced my belief in persistence and individual effort, qualities I continue to rely on.
+
+
+\ifshowsections\section*{Professional Experience}\fi
+
+
+My professional career spans over a decade and multiple countries, including Bangladesh, Singapore, and the UAE. At Smarter AI, I developed Instant Streaming\textsuperscript{TM}, enabling Dashcams to connect in under a second, and created traffic feature identification algorithms using geospatial data. These innovations have advanced intelligent transportation systems. Additionally, I modernized legacy systems by transitioning core SDKs to REST API architecture and developed CI/CD pipelines that automated analytics reporting and system health checks.
+
+
+At AnyConnect, I led the design and implementation of a Communication SDK while supporting AT&T with on-site engineering solutions. Earlier in my career at Eyeball Networks, I contributed to the development of MS-SIP Library features like multi-video calls and codec adaptability. These experiences highlight my adaptability in addressing diverse technological challenges.
+
+
+\ifshowsections\section*{Research Interests}\fi
+
+
+My research journey began with my undergraduate thesis and has evolved through projects exploring real-time systems, feature detection algorithms, and optimization techniques. These efforts deepened my technical expertise and strengthened my commitment to advancing computer science. My skills span multiple programming languages (C++, Python, Java) and frameworks, as well as AI/ML tools that I have applied in various professional settings.
+
+
+I am particularly interested in the intersection of AI, ML, and IoT. My research focuses on developing scalable algorithms for large-scale applications, with an emphasis on intelligent transportation and autonomous systems. Through a PhD program, I aim to explore cutting-edge methods in deep learning and optimization, contributing meaningfully to both academia and industry.
+
+
+\ifshowsections\section*{Motivation and Future Goals}\fi
+
+
+I have chosen \textbf{[University Name]} for its strong reputation in interdisciplinary research and excellence in AI and systems engineering. The work of Professor \textbf{[Faculty Name]} in \textbf{[Research Area]} closely aligns with my research interests, and I look forward to collaborating under their mentorship. The university’s dynamic environment and advanced resources offer the ideal platform for impactful research.
+
+
+My long-term goal is to bridge academia and industry by creating innovative solutions to global challenges and mentoring future researchers. I also remain committed to inspiring young engineers in my home community to explore the transformative potential of technology.
+
+
+\ifshowsections\section*{Conclusion}\fi
+
+
+The challenges I have faced have shaped my resilience, ambition, and dedication to excellence. I believe that a PhD from \textbf{[University Name]} will equip me with the expertise to achieve my goals and make lasting contributions to the global research community.
+
 
 I look forward to joining \textbf{[University Name]} as a graduate student in your esteemed department.
 
+
 \begin{flushleft}
-%    \vspace{0.5em}
-    \textbf{Nazmul Alam}
+\vspace{1.5em}
+\textbf{Nazmul Alam}
 \end{flushleft}
 
+
 \end{document}
+
