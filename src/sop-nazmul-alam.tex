@@ -10,13 +10,16 @@
 \newif\ifshowsections
 \showsectionsfalse % Change to \showsectionstrue to show section titles
 
+% Define a command for properly formatted section starts
+\newcommand{\tabsection}[1]{\par\noindent\textbf{#1}\par\indent}
+
 \begin{document}
 
 \begin{center}
     {\Large \textbf{Statement of Purpose}}
 \end{center}
 
-\ifshowsections\section*{Introduction}\fi
+\ifshowsections\tabsection{Introduction}\fi
 
 Emerging from a rural area in Bangladesh with limited access to technology, I cultivated a resilience
 and an unwavering passion for learning. This drive propelled me to excel academically, culminating
@@ -25,7 +28,7 @@ Here, amidst financial and personal challenges, I unearthed a profound interest 
 (AI) and machine learning (ML), setting the foundation for my commitment to leveraging technology to solve
 intricate real-world problems.
 
-\ifshowsections\section*{Academic Journey}\fi
+\ifshowsections\tabsection{Academic Journey}\fi
 
 As the first in my family to pursue engineering, I approached my undergraduate studies at Shahjalal University
 of Science and Technology (SUST) with ambition and determination. I consistently ranked among the top students
@@ -47,7 +50,7 @@ Artificial Neural Network Model}, ultimately reached a prediction accuracy of up
 experience highlighted the transformative potential of AI in computational biology and reinforced my passion for
 developing advanced technological solutions to complex challenges.
 
-\ifshowsections\section*{Programming Contest Experience}\fi
+\ifshowsections\tabsection{Programming Contest Experience}\fi
 
 My commitment to excellence extended beyond academics. I actively participated in over 150 programming
 contests, both online and onsite, including regional competitions. These experiences honed my analytical
@@ -56,7 +59,7 @@ solved over 500 programming problems, further solidifying my expertise in algori
 These achievements reflect my dedication to continuous learning and my ability to tackle complex computational
 challenges effectively.
 
-\ifshowsections\section*{Personal Resilience and Sacrifices}\fi
+\ifshowsections\tabsection{Personal Resilience and Sacrifices}\fi
 
 During my second year of undergraduate studies, my father returned from overseas due to illness,
 creating a need for me to support myself financially. As the second eldest among four siblings, I was
@@ -72,7 +75,7 @@ One memorable moment in my academic journey was solving a challenging dynamics p
 after a contest where my team had struggled. This experience reinforced my belief in persistence and
 individual effort, qualities I continue to rely on.
 
-\ifshowsections\section*{Professional Experience}\fi
+\ifshowsections\tabsection{Professional Experience}\fi
 
 Spanning over a decade, my professional career has taken me across Bangladesh, Singapore, and the UAE,
 allowing me to cultivate a diverse skill set in software and R\&D engineering.
@@ -106,7 +109,7 @@ In addition to my programming contest accolades, I was honored as the \textbf{He
 Smarter AI and received multiple \textbf{Employee of the Month} awards at AnyConnect Private Limited for exceptional
 performance and dedication. These recognitions underscore my ability to deliver high-quality results consistently.
 
-\ifshowsections\section*{Research Interests}\fi
+\ifshowsections\tabsection{Research Interests}\fi
 
 My research journey began with my undergraduate thesis and has evolved through projects exploring real-time
 systems, feature detection algorithms, and optimization techniques. These efforts have deepened my technical
@@ -119,7 +122,7 @@ for large-scale applications, especially in intelligent transportation and auton
 I aim to explore cutting-edge methods in deep learning and optimization, contributing meaningfully to both academia
 and industry.
 
-\ifshowsections\section*{Motivation and Future Goals}\fi
+\ifshowsections\tabsection{Motivation and Future Goals}\fi
 
 I have chosen \textbf{Sample University} for its strong reputation in interdisciplinary research and excellence
 in AI and systems engineering. The work of Professor \textbf{[Faculty Name]} in \textbf{[Research Area]} closely aligns
@@ -130,7 +133,7 @@ My long-term goal is to bridge academia and industry by creating innovative solu
 mentoring future researchers. I also remain committed to inspiring young engineers in my home community to explore
 the transformative potential of technology.
 
-\ifshowsections\section*{Conclusion}\fi
+\ifshowsections\tabsection{Conclusion}\fi
 
 The challenges I have faced have shaped my resilience, ambition, and dedication to excellence. I believe that a
 PhD from \textbf{Sample University} will equip me with the expertise to achieve my goals and make lasting
@@ -139,7 +142,7 @@ contributions to the global research community.
 I look forward to joining \textbf{Sample University} as a graduate student in your esteemed department.
 
 \begin{flushleft}
-    \hspace{2em}Thank you for your time and consideration.
+    Thank you for your time and consideration.
 \end{flushleft}
 
 \end{document}
