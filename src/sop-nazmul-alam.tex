@@ -1,17 +1,9 @@
 \documentclass[11pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{times}
-\usepackage{setspace}
-\setlength\parskip{6pt}
-\setlength\parindent{0pt}
-\linespread{1.2}
+\usepackage{sopstyle} % Load the custom SOP style
 
 % Toggle section titles on/off
 \newif\ifshowsections
 \showsectionsfalse % Change to \showsectionstrue to show section titles
-
-% Define a command for properly formatted section starts
-\newcommand{\tabsection}[1]{\par\noindent\textbf{#1}\par\indent}
 
 \begin{document}
 
@@ -19,18 +11,16 @@
     {\Large \textbf{Statement of Purpose}}
 \end{center}
 
-\ifshowsections\tabsection{Introduction}\fi
-
-Emerging from a rural area in Bangladesh with limited access to technology, I cultivated a resilience
+\ifshowsections\sopsection{Introduction}\fi
+\firstparagraph Emerging from a rural area in Bangladesh with limited access to technology, I cultivated a resilience
 and an unwavering passion for learning. This drive propelled me to excel academically, culminating
 in my pursuit of higher education at Shahjalal University of Science and Technology (SUST) in Dhaka.
 Here, amidst financial and personal challenges, I unearthed a profound interest in artificial intelligence
 (AI) and machine learning (ML), setting the foundation for my commitment to leveraging technology to solve
 intricate real-world problems.
 
-\ifshowsections\tabsection{Academic Journey}\fi
-
-As the first in my family to pursue engineering, I approached my undergraduate studies at Shahjalal University
+\ifshowsections\sopsection{Academic Journey}\fi
+\firstparagraph As the first in my family to pursue engineering, I approached my undergraduate studies at Shahjalal University
 of Science and Technology (SUST) with ambition and determination. I consistently ranked among the top students
 in my cohort, earned scholarships for academic excellence, and maintained a GPA of 3.49/4. Beyond the classroom,
 I engaged in programming contests, placing 11th in the SUST National Collegiate Programming Contest (2010) with
@@ -50,18 +40,16 @@ Artificial Neural Network Model}, ultimately reached a prediction accuracy of up
 experience highlighted the transformative potential of AI in computational biology and reinforced my passion for
 developing advanced technological solutions to complex challenges.
 
-\ifshowsections\tabsection{Programming Contest Experience}\fi
-
-My commitment to excellence extended beyond academics. I actively participated in over 150 programming
+\ifshowsections\sopsection{Programming Contest Experience}\fi
+\firstparagraph My commitment to excellence extended beyond academics. I actively participated in over 150 programming
 contests, both online and onsite, including regional competitions. These experiences honed my analytical
 skills, teamwork, and ability to perform under pressure. As a blue coder in the Codeforces, I have successfully
 solved over 500 programming problems, further solidifying my expertise in algorithms and data structures.
 These achievements reflect my dedication to continuous learning and my ability to tackle complex computational
 challenges effectively.
 
-\ifshowsections\tabsection{Personal Resilience and Sacrifices}\fi
-
-During my second year of undergraduate studies, my father returned from overseas due to illness,
+\ifshowsections\sopsection{Personal Resilience and Sacrifices}\fi
+\firstparagraph During my second year of undergraduate studies, my father returned from overseas due to illness,
 creating a need for me to support myself financially. As the second eldest among four siblings, I was
 not only supporting my own living and education but also contributing to my younger siblings' expenses.
 I started home tutoring students alongside my undergraduate education, earning enough to cover my
@@ -75,9 +63,8 @@ One memorable moment in my academic journey was solving a challenging dynamics p
 after a contest where my team had struggled. This experience reinforced my belief in persistence and
 individual effort, qualities I continue to rely on.
 
-\ifshowsections\tabsection{Professional Experience}\fi
-
-Spanning over a decade, my professional career has taken me across Bangladesh, Singapore, and the UAE,
+\ifshowsections\sopsection{Professional Experience}\fi
+\firstparagraph Spanning over a decade, my professional career has taken me across Bangladesh, Singapore, and the UAE,
 allowing me to cultivate a diverse skill set in software and R\&D engineering.
 
 In \textbf{October 2015}, I joined \textbf{AnyConnect Private Limited, Singapore}, a newly formed company by Eyeball
@@ -109,9 +96,8 @@ In addition to my programming contest accolades, I was honored as the \textbf{He
 Smarter AI and received multiple \textbf{Employee of the Month} awards at AnyConnect Private Limited for exceptional
 performance and dedication. These recognitions underscore my ability to deliver high-quality results consistently.
 
-\ifshowsections\tabsection{Research Interests}\fi
-
-My research journey began with my undergraduate thesis and has evolved through projects exploring real-time
+\ifshowsections\sopsection{Research Interests}\fi
+\firstparagraphMy research journey began with my undergraduate thesis and has evolved through projects exploring real-time
 systems, feature detection algorithms, and optimization techniques. These efforts have deepened my technical
 expertise and strengthened my commitment to advancing computer science. My skills span multiple programming
 languages (C++, Python, Java) and frameworks, as well as AI/ML tools that I have applied in various professional
@@ -122,9 +108,8 @@ for large-scale applications, especially in intelligent transportation and auton
 I aim to explore cutting-edge methods in deep learning and optimization, contributing meaningfully to both academia
 and industry.
 
-\ifshowsections\tabsection{Motivation and Future Goals}\fi
-
-I have chosen \textbf{Sample University} for its strong reputation in interdisciplinary research and excellence
+\ifshowsections\sopsection{Motivation and Future Goals}\fi
+\firstparagraph I have chosen \textbf{Sample University} for its strong reputation in interdisciplinary research and excellence
 in AI and systems engineering. The work of Professor \textbf{[Faculty Name]} in \textbf{[Research Area]} closely aligns
 with my research interests, and I look forward to collaborating under their mentorship. The university’s dynamic
 environment and advanced resources offer the ideal platform for impactful research.
@@ -133,13 +118,10 @@ My long-term goal is to bridge academia and industry by creating innovative solu
 mentoring future researchers. I also remain committed to inspiring young engineers in my home community to explore
 the transformative potential of technology.
 
-\ifshowsections\tabsection{Conclusion}\fi
-
-The challenges I have faced have shaped my resilience, ambition, and dedication to excellence. I believe that a
+\ifshowsections\sopsection{Conclusion}\fi
+\firstparagraph The challenges I have faced have shaped my resilience, ambition, and dedication to excellence. I believe that a
 PhD from \textbf{Sample University} will equip me with the expertise to achieve my goals and make lasting
 contributions to the global research community.
-
-I look forward to joining \textbf{Sample University} as a graduate student in your esteemed department.
 
 \begin{flushleft}
     Thank you for your time and consideration.
