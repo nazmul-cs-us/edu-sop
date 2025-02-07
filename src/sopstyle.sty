@@ -4,19 +4,20 @@
 \RequirePackage[margin=1in]{geometry}
 \RequirePackage{times}
 \RequirePackage{setspace}
-
-% Paragraph formatting
-\setlength\parskip{6pt}  % Space between paragraphs
-\setlength\parindent{0pt}  % Remove automatic indentation for all paragraphs
-\linespread{1.2}
-
-% Ensure first paragraph after section title is also indented
 \RequirePackage{indentfirst}
 
-% Define a command to manually indent only the first paragraph when sections are hidden
+% Paragraph formatting
+\setlength\parskip{6pt}     % Space between paragraphs
+\setlength\parindent{0pt}   % Remove automatic indentation for all paragraphs
+\linespread{1.2}
+
+% Define a toggle to show/hide section titles
+\newif\ifshowsections
+
+% Manually indent the first paragraph only when sections are hidden
 \newcommand{\firstparagraph}{\ifshowsections\else\hspace{1.5em}\fi}
 
-% Define a toggleable section formatting
+% Toggleable section formatting
 \newcommand{\sopsection}[1]{%
     \ifshowsections
         \par\vspace{10pt} % Add space before section
@@ -24,3 +25,13 @@
         \par\vspace{4pt} % Small space between title and first paragraph
     \fi
 }
+
+% --- Add fancy header and footer ---
+\RequirePackage{fancyhdr}
+\RequirePackage{hyperref}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Nazmul Alam}
+\chead{web: \href{https://nazmul.github.io}{nazmul.github.io}}
+\rhead{\href{mailto:nazmul.cs.us@gmail.com}{nazmul.cs.us@gmail.com}}
+\cfoot{\thepage}
