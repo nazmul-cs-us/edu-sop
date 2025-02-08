@@ -1,11 +1,18 @@
 \documentclass[11pt]{article}
-\usepackage{sopstyle} % This now loads your style plus the header.
+\usepackage{sopstyle}
 
 \begin{document}
 
-\begin{center}
-    {\Large \textbf{Statement of Purpose}}
-\end{center}
+% Optionally hide or show section titles:
+%\showsectionstrue
+\showsectionsfalse
+
+% --- Use the SoP Header ---
+\sopHeader
+  {Sample University}
+  {PhD in Computer Science}
+  {Nazmul Alam}
+  {nazmul.cs.us@gmail.com}
 
 \ifshowsections\sopsection{Introduction}\fi
 \firstparagraph Emerging from a rural area in Bangladesh with limited access to technology, I cultivated a resilience

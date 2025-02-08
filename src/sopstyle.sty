@@ -1,17 +1,21 @@
 \ProvidesPackage{sopstyle}
 
-% Import required packages
+% -------------------------------------------------
+% 1) Import required packages
+% -------------------------------------------------
 \RequirePackage[margin=1in]{geometry}
-\RequirePackage{times}
+\RequirePackage{times}           % Times font
 \RequirePackage{setspace}
-\RequirePackage{indentfirst}
+\RequirePackage{indentfirst}     % Indent first paragraph of each section if needed
 
 % Paragraph formatting
-\setlength\parskip{6pt}     % Space between paragraphs
-\setlength\parindent{0pt}   % Remove automatic indentation for all paragraphs
-\linespread{1.2}
+\setlength\parskip{6pt}         % Space between paragraphs
+\setlength\parindent{0pt}       % Remove automatic indentation
+\linespread{1.2}                % 1.2 line spacing
 
-% Define a toggle to show/hide section titles
+% -------------------------------------------------
+% 2) Toggle to show/hide section titles
+% -------------------------------------------------
 \newif\ifshowsections
 
 % Manually indent the first paragraph only when sections are hidden
@@ -20,18 +24,38 @@
 % Toggleable section formatting
 \newcommand{\sopsection}[1]{%
     \ifshowsections
-        \par\vspace{10pt} % Add space before section
-        \noindent\textbf{#1} % Make section title bold
-        \par\vspace{4pt} % Small space between title and first paragraph
+        \par\vspace{10pt}      % Add space before section
+        \noindent\textbf{#1}   % Make section title bold
+        \par\vspace{4pt}       % Small space between title and first paragraph
     \fi
 }
 
-% --- Add fancy header and footer ---
-\RequirePackage{fancyhdr}
-\RequirePackage{hyperref}
-\pagestyle{fancy}
-\fancyhf{}
-\lhead{Nazmul Alam}
-\chead{web: \href{https://nazmul.github.io}{nazmul.github.io}}
-\rhead{\href{mailto:nazmul.cs.us@gmail.com}{nazmul.cs.us@gmail.com}}
-\cfoot{\thepage}
+% -------------------------------------------------
+% 3) NEW COMMAND: SoP Header Layout
+% -------------------------------------------------
+% Usage: \sopHeader{<University>}{<Program>}{<Name>}{<Email>}
+% Produces a big "STATEMENT OF PURPOSE" title, plus
+% two aligned minipages (left for univ/program, right for name/email),
+% and a horizontal rule across the page.
+% -------------------------------------------------
+\newcommand{\sopHeader}[4]{%
+  \begin{center}
+    {\Large \textbf{STATEMENT OF PURPOSE}}
+  \end{center}
+  \vspace{1em}
+  \noindent
+  \begin{minipage}[t]{0.6\textwidth}
+    #1 \\
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.35\textwidth}
+    \raggedleft
+    #3 \\
+    #4
+  \end{minipage}
+  \par
+  \vspace{0.8em}
+  \rule{\textwidth}{0.5pt}
+  \vspace{1em}
+}
