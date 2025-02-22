@@ -3,15 +3,15 @@
 % -------------------------------------------------
 % 1) Import required packages
 % -------------------------------------------------
-\RequirePackage[margin=1in]{geometry}
-\RequirePackage{times}           % Times font
+\RequirePackage[margin=1in]{geometry}  % 1-inch margins
+\RequirePackage{times}                 % Times font
 \RequirePackage{setspace}
-\RequirePackage{indentfirst}     % Indent first paragraph of each section if needed
+\RequirePackage{indentfirst}           % Indent first paragraph of each section if needed
 
 % Paragraph formatting
-\setlength\parskip{6pt}         % Space between paragraphs
-\setlength\parindent{0pt}       % Remove automatic indentation
-\linespread{1.2}                % 1.2 line spacing
+\setlength\parskip{6pt}      % Space between paragraphs
+\setlength\parindent{0pt}    % Remove automatic indentation
+\linespread{1.2}             % 1.2 line spacing
 
 % -------------------------------------------------
 % 2) Toggle to show/hide section titles
@@ -31,18 +31,21 @@
 }
 
 % -------------------------------------------------
-% 3) NEW COMMAND: SoP Header Layout
+% 3) SoP Header Layout
 % -------------------------------------------------
 % Usage: \sopHeader{<University>}{<Program>}{<Name>}{<Email>}
-% Produces a big "STATEMENT OF PURPOSE" title, plus
-% two aligned minipages (left for univ/program, right for name/email),
-% and a horizontal rule across the page.
+% This creates:
+%   1) A centered "STATEMENT OF PURPOSE" title
+%   2) Two columns (University/Program on left, Name/Email on right)
+%   3) A horizontal rule beneath
 % -------------------------------------------------
 \newcommand{\sopHeader}[4]{%
   \begin{center}
     {\Large \textbf{STATEMENT OF PURPOSE}}
   \end{center}
-  \vspace{1em}
+  % Control vertical space after the title if needed:
+  % \vspace{1em}
+
   \noindent
   \begin{minipage}[t]{0.6\textwidth}
     #1 \\
@@ -55,7 +58,9 @@
     #4
   \end{minipage}
   \par
-  \vspace{0.8em}
-  \rule{\textwidth}{0.5pt}
-  \vspace{1em}
+
+  % Adjust vertical spacing before/after the rule if desired:
+  % \vspace{0.5em}
+  \rule{\textwidth}{0.1pt}
+  % \vspace{0.5em}
 }
