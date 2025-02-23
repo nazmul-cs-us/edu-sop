@@ -74,7 +74,7 @@
 % CITATION SETTINGS
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \renewcommand{\refname}{\begin{center}References\vspace{-40pt}\end{center}}
-\AtEndDocument{\footnotetext{* denotes equal contribution.}}
+%\AtEndDocument{\footnotetext{* denotes equal contribution.}}
 \bibliographystyle{unsrtnat}
 \hypersetup{
     colorlinks=true,
